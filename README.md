@@ -20,5 +20,5 @@
   + [Services](https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/tree/main/tgbot/services) - Клиент, который организовывает связь с сервером через очередь
 
 + ### [Server](https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/tree/main/server)
-  + [server.py]("https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/blob/main/server/server.py") - код сервера
-  + [generation.py]("https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/blob/main/server/generation.py") - класс, организующий генерацию гороскопа
+  + [server.py](https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/blob/main/server/server.py") - код сервера
+  + [generation.py](https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/blob/main/server/generation.py) - класс, организующий генерацию гороскопа
