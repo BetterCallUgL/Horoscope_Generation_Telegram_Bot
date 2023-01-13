@@ -18,6 +18,7 @@ class RpcClient:
         self.futures: MutableMapping[str, asyncio.Future] = {}
         self.loop = asyncio.get_running_loop()
 
+    # подключение к порту, создание канала и очереди
     async def connect(self) -> "RpcClient":
         self.connection = await connect(
             "amqp://guest:guest@localhost/", loop=self.loop,
@@ -32,6 +33,7 @@ class RpcClient:
         future: asyncio.Future = self.futures.pop(message.correlation_id)
         future.set_result(message.body)
 
+    # отправка сообщения и ожидания ввода
     async def call(self, sentence: str) -> str:
         correlation_id = str(uuid.uuid4())
         future = self.loop.create_future()
