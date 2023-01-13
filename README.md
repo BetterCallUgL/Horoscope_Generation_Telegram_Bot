@@ -11,7 +11,7 @@
 
 ## Структура проекта
 
-+ ### [Telegram Bot]("https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/tree/main/tgbot/handlers")
-  + [Handlers]("https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/tree/main/tgbot/handlers")
++ ### [Telegram Bot](https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/tree/main/tgbot/handlers)
+  + [Handlers](https://github.com/BetterCallUgL/Horoscope_Generation_Telegram_Bot/tree/main/tgbot/handlers)
   +
   +
