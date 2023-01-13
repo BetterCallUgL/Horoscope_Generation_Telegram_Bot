@@ -1,0 +1,32 @@
+
+version: '3'  
+
+services:
+  
+  rabbitmq:
+    image: 'rabbitmq:3.6-management-alpine'
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    networks:
+      - rabbitnetwork
+
+client:
+    build: ./client
+    environment:
+      AMQP_URL: 'amqp://rabbitmq?connection_attempts=5&retry_delay=5'
+    networks:
+      - rabbitnetwork
+    restart: always
+
+server:
+  build: ./server
+  environment:
+    AMQP_URL: 'amqp://rabbitmq?connection_attempts=5&retry_delay=5'
+  networks:
+    - rabbitnetwork
+  restart: always
+
+networks:
+  rabbitnetwork:
+    driver: bridge
